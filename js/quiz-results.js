@@ -8,21 +8,27 @@
   /* ─── URL params ─────────────────────────────────────────────── */
   function getParams() {
     const p = new URLSearchParams(window.location.search);
+    const moduleId = p.get('module') || 'phishing';
+    const saved = window.CyberProgress ? window.CyberProgress.getModuleData(moduleId) : null;
+    const hasScore = p.has('score') && !isNaN(parseInt(p.get('score'), 10));
+    const hasTotal = p.has('total') && !isNaN(parseInt(p.get('total'), 10));
+
     return {
-      moduleId: p.get('module') || 'phishing',
-      score: parseInt(p.get('score'), 10) || 0,
-      total: parseInt(p.get('total'), 10) || 5
+      moduleId,
+      score: hasScore ? parseInt(p.get('score'), 10) : (saved ? saved.score : 0),
+      total: hasTotal ? parseInt(p.get('total'), 10) : (saved ? saved.total : 5),
+      isNewScore: hasScore
     };
   }
 
   /* ─── Main init ──────────────────────────────────────────────── */
   function init() {
-    const { moduleId, score, total } = getParams();
-    const pct = Math.round((score / total) * 100);
+    const { moduleId, score, total, isNewScore } = getParams();
+    const pct = total > 0 ? Math.round((score / total) * 100) : 0;
     const mod = window.MODULES && window.MODULES[moduleId];
 
-    // Persist score
-    if (window.CyberProgress) {
+    // Persist score only if newly passed via URL
+    if (window.CyberProgress && isNewScore) {
       window.CyberProgress.setModuleScore(moduleId, score, total);
     }
 
