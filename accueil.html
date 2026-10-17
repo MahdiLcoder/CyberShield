@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="light" dir="ltr" lang="fr"><head>
+<html dir="ltr" lang="fr"><head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="web_standard" name="shell-type" />
@@ -15,152 +15,150 @@
       rel="stylesheet" />
 
     <link rel="stylesheet" href="css/global.css" />
-    <script
-      src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="js/tailwind-accueil.js"></script>
+
   </head>
   <body
-    class="bg-background text-on-surface font-body-md text-body-md min-h-screen relative selection:bg-sky-100 selection:text-sky-900">
+    class="home-page-body">
     <!-- Subtle Ambient Glow Field -->
     <div
-      class="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,rgba(2,132,199,0.06),transparent_70%)]"></div>
+      class="home-subtle-ambient-glow-field-content-container"></div>
     <!-- HEADER -->
     <header
-      class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+      class="home-header-site-header">
       <div
-        class="h-20 max-w-[1600px] mx-auto px-margin flex items-center justify-between gap-space-md">
-        <div class="flex items-center gap-space-lg">
-          <a class="flex items-center gap-space-sm group text-start"
+        class="home-header-content-row">
+        <div class="home-header-content-row-2">
+          <a class="home-header-brand-link hover-group"
             data-path="accueil" href="#">
             <div
-              class="w-9 h-9 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shadow-sm">
+              class="home-header-content-card">
               <span
-                class="material-symbols-outlined text-[24px] icon-filled">shield</span>
+                class="home-header-icon material-symbols-outlined icon-filled">shield</span>
             </div>
-            <div class="flex flex-col">
+            <div class="home-header-content-stack">
               <span
-                class="font-headline-sm text-headline-sm tracking-tight text-slate-900 group-hover:text-primary transition-colors">CyberShield
+                class="home-header-inline-text">CyberShield
                 Academy</span>
               <span
-                class="font-label-sm text-label-sm text-slate-500 font-medium tracking-wide">Plateforme
+                class="home-header-eyebrow">Plateforme
                 d'apprentissage interactif</span>
             </div>
           </a>
-          <nav class="hidden xl:flex items-center gap-space-xs"
+          <nav class="home-header-primary-navigation hidden"
             data-active-classes="bg-sky-50 text-primary font-bold rounded-xl border border-sky-100">
             <a aria-current="page"
-              class="px-space-md py-space-sm transition-all bg-sky-50 text-primary font-bold rounded-xl border border-sky-100/80 shadow-sm"
+              class="home-header-content-link"
               data-path="accueil" href="#">Accueil</a>
             <a
-              class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all"
+              class="home-header-navigation-link"
               data-path="modules-de-formation" href="#">Modules de formation</a>
             <a
-              class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all"
+              class="home-header-navigation-link"
               data-path="simulations-et-quiz" href="#">Simulations &amp;
               Quiz</a>
             <a
-              class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all"
+              class="home-header-navigation-link"
               data-path="ressources-et-astuces" href="#">Ressources &amp;
               Astuces</a>
           </nav>
         </div>
-        <div class="flex items-center gap-space-md">
+        <div class="home-header-content-row-3">
           <!-- Progress Capsule -->
           <div
-            class="hidden md:flex items-center gap-space-sm bg-slate-100/80 border border-slate-200/80 px-space-md py-space-xs rounded-full shadow-sm">
-            <div class="relative flex items-center justify-center">
+            class="home-progress-capsule-content-card hidden">
+            <div class="home-progress-capsule-content-row">
               <div
-                class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></div>
+                class="home-progress-capsule-content-card-2"></div>
               <div
-                class="absolute w-4 h-4 rounded-full bg-emerald-500/20"></div>
+                class="home-progress-capsule-content-card-3"></div>
             </div>
-            <div class="flex flex-col gap-0.5">
-              <div class="flex items-center justify-between gap-space-sm">
+            <div class="home-progress-capsule-content-stack">
+              <div class="home-progress-capsule-content-row-2">
                 <span
-                  class="font-label-sm text-label-sm text-slate-500">Progression
+                  class="home-progress-capsule-eyebrow">Progression
                   globale</span>
                 <span
-                  class="font-label-sm text-label-sm text-emerald-600 font-bold">1/3
+                  class="home-progress-capsule-eyebrow-2">1/3
                   (33%)</span>
               </div>
-              <div class="w-24 h-1.5 bg-slate-200 rounded-full overflow-hidden">
+              <div class="home-progress-capsule-content-card-4">
                 <div
-                  class="w-1/3 h-full bg-gradient-to-r from-sky-500 to-emerald-500 rounded-full"></div>
+                  class="home-progress-capsule-content-card-5"></div>
               </div>
             </div>
           </div>
           <!-- Language Switcher -->
           <div
-            class="inline-flex items-center p-0.5 rounded-full bg-slate-100 border border-slate-200">
+            class="home-language-switcher-content-card">
             <button
-              class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-white text-primary shadow-sm transition-all"
+              class="home-language-switcher-button"
               data-language="fr" type="button">FR</button>
             <button
-              class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm text-slate-600 hover:text-slate-900 transition-all"
+              class="home-language-switcher-button-2"
               data-language="ar" type="button">عربي</button>
           </div>
           <!-- User Avatar -->
-          <div class="flex items-center gap-space-sm pl-space-xs">
-            <div class="relative flex items-center justify-center">
+          <div class="home-user-avatar-content-row">
+            <div class="home-user-avatar-content-row-2">
               <img alt="Profile"
-                class="w-8 h-8 rounded-full object-cover ring-2 ring-slate-100"
+                class="home-user-avatar-image"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA47MJQ4IHYQ4Ff9z5KxLQS2G48zmnJd0_rVIBVpgKj_-q1mz5C08HYxyhUI-IY-ERIqTsxxKmD5K9jZl06DYOeZhlNb1eo4lsx6SfdZMOTEmvvD7nwjSD7Kp9bw1wPTZK_PLWcctcjHdJtV91GvUJpo-DUWi-tvofefyxuo_5hhrjV3gDJxPXQR6346IwMtiJKJ6LdZmI5cagT_VpTGsCiZsu_yT2CX8PNHQZkjrezfHhBpg64ryJv" />
               <span
-                class="absolute bottom-0 end-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-white"></span>
+                class="home-user-avatar-status-badge"></span>
             </div>
-            <div class="hidden lg:flex flex-col text-start">
+            <div class="home-user-avatar-content-stack hidden">
               <span
-                class="font-label-md text-label-md font-semibold text-slate-900">Sarah
+                class="home-user-avatar-eyebrow">Sarah
                 B.</span>
               <span
-                class="font-label-sm text-label-sm text-slate-500">Étudiante</span>
+                class="home-user-avatar-eyebrow-2">Étudiante</span>
             </div>
           </div>
         </div>
       </div>
     </header>
     <!-- MAIN CONTENT -->
-    <main class="w-full pt-20 bg-background min-h-screen">
-      <div class="flex flex-col w-full">
+    <main class="home-main-content-main-content">
+      <div class="home-main-content-content-stack">
         <!-- Top Ambient Glow Field -->
-        <div class="relative w-full overflow-hidden">
+        <div class="home-top-ambient-glow-field-content-container">
           <div
-            class="absolute -top-40 start-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-sky-200/40 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+            class="home-top-ambient-glow-field-content-card"></div>
           <div
-            class="absolute top-72 end-10 w-[420px] h-[420px] bg-emerald-100/50 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+            class="home-top-ambient-glow-field-content-card-2"></div>
           <!-- HERO SECTION -->
-          <section class="max-w-[1280px] mx-auto px-margin pt-12 pb-20">
+          <section class="home-hero-section-content-section">
             <div
-              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+              class="home-hero-section-content-grid">
               <!-- Left Column: Copy & CTAs -->
-              <div class="lg:col-span-7 flex flex-col gap-space-lg">
+              <div class="home-left-column-copy-and-ctas-content-stack">
                 <!-- Live Program Pill & Bilingual Preview Tag -->
-                <div class="flex flex-wrap items-center gap-space-sm">
+                <div class="home-live-program-pill-and-bilingual-prev-content-row">
                   <div
-                    class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-sky-50 border border-sky-200/80 shadow-sm">
+                    class="home-live-program-pill-and-bilingual-prev-content-card">
                     <span
-                      class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                      class="home-live-program-pill-and-bilingual-prev-status-badge"></span>
                     <span
-                      class="font-label-sm text-label-sm uppercase tracking-wider text-sky-800 font-semibold">Nouveau
+                      class="home-live-program-pill-and-bilingual-prev-eyebrow">Nouveau
                       programme interactif 2025</span>
                   </div>
                   <div
-                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-600 font-label-sm text-label-sm shadow-sm"
+                    class="home-live-program-pill-and-bilingual-prev-content-card-2"
                     dir="rtl">
-                    <span class="text-sky-700 font-medium">تعلم الأمن السيبراني
+                    <span class="home-live-program-pill-and-bilingual-prev-inline-text">تعلم الأمن السيبراني
                       بطريقة تفاعلية وممتعة</span>
                   </div>
                 </div>
                 <!-- Headline -->
-                <div class="flex flex-col gap-space-xs">
+                <div class="home-headline-content-stack">
                   <h1
-                    class="font-headline-display text-headline-display tracking-tight text-slate-900 font-extrabold leading-[1.12]">
+                    class="home-headline-page-title">
                     Apprenez la <span
-                      class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-sky-500 to-emerald-600">cybersécurité</span>
+                      class="home-headline-inline-text">cybersécurité</span>
                     en jouant
                   </h1>
                   <p
-                    class="font-body-lg text-body-lg text-slate-600 max-w-2xl pt-2">
+                    class="home-headline-body-copy">
                     Comprenez les cyberattaques du quotidien grâce à des
                     simulations immersives étape par étape et des quiz
                     interactifs sans jargon. Accessible aux étudiants, PME et
@@ -168,165 +166,165 @@
                   </p>
                 </div>
                 <!-- CTAs -->
-                <div class="flex flex-wrap items-center gap-space-md pt-2">
+                <div class="home-ctas-content-row">
                   <a
-                    class="inline-flex items-center justify-center gap-space-sm px-7 py-3.5 rounded-xl bg-primary text-white font-label-lg text-label-lg font-bold shadow-[0_4px_16px_rgba(2,132,199,0.25)] hover:shadow-[0_6px_22px_rgba(2,132,199,0.4)] hover:bg-sky-700 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                    class="home-ctas-navigation-link"
                     data-path="modules-de-formation" href="#">
                     <span>Commencer gratuitement</span>
                     <span
-                      class="material-symbols-outlined text-[20px]">arrow_forward</span>
+                      class="home-ctas-icon material-symbols-outlined">arrow_forward</span>
                   </a>
                   <a
-                    class="inline-flex items-center justify-center gap-space-sm px-6 py-3.5 rounded-xl bg-white text-slate-700 border border-slate-300 font-label-lg text-label-lg font-semibold hover:text-primary hover:border-sky-300 hover:bg-sky-50/50 shadow-sm transition-all"
+                    class="home-ctas-navigation-link-2"
                     href="#modules-preview">
                     <span
-                      class="material-symbols-outlined text-primary text-[20px]">play_circle</span>
+                      class="home-ctas-icon-2 material-symbols-outlined">play_circle</span>
                     <span>Voir les 3 modules</span>
                   </a>
                 </div>
                 <!-- Trust & Credibility Bar -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-4">
+                <div class="home-trust-and-credibility-bar-content-grid">
                   <div
-                    class="flex items-center gap-2 p-2.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                    class="home-trust-and-credibility-bar-content-card">
                     <span
-                      class="material-symbols-outlined text-emerald-600 text-[20px]">verified_user</span>
-                    <div class="flex flex-col">
+                      class="home-trust-and-credibility-bar-icon material-symbols-outlined">verified_user</span>
+                    <div class="home-trust-and-credibility-bar-content-stack">
                       <span
-                        class="font-label-sm text-label-sm font-semibold text-slate-900">100%
+                        class="home-trust-and-credibility-bar-eyebrow">100%
                         Sans risque</span>
                       <span
-                        class="font-label-sm text-label-sm text-slate-500">Bac à
+                        class="home-trust-and-credibility-bar-eyebrow-2">Bac à
                         sable isolé</span>
                     </div>
                   </div>
                   <div
-                    class="flex items-center gap-2 p-2.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                    class="home-trust-and-credibility-bar-content-card">
                     <span
-                      class="material-symbols-outlined text-primary text-[20px]">timer</span>
-                    <div class="flex flex-col">
+                      class="home-trust-and-credibility-bar-icon-2 material-symbols-outlined">timer</span>
+                    <div class="home-trust-and-credibility-bar-content-stack">
                       <span
-                        class="font-label-sm text-label-sm font-semibold text-slate-900">15
+                        class="home-trust-and-credibility-bar-eyebrow">15
                         min</span>
                       <span
-                        class="font-label-sm text-label-sm text-slate-500">Par
+                        class="home-trust-and-credibility-bar-eyebrow-2">Par
                         module clé</span>
                     </div>
                   </div>
                   <div
-                    class="flex items-center gap-2 p-2.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                    class="home-trust-and-credibility-bar-content-card">
                     <span
-                      class="material-symbols-outlined text-amber-600 text-[20px]">workspace_premium</span>
-                    <div class="flex flex-col">
+                      class="home-trust-and-credibility-bar-icon-3 material-symbols-outlined">workspace_premium</span>
+                    <div class="home-trust-and-credibility-bar-content-stack">
                       <span
-                        class="font-label-sm text-label-sm font-semibold text-slate-900">Certificat</span>
+                        class="home-trust-and-credibility-bar-eyebrow">Certificat</span>
                       <span
-                        class="font-label-sm text-label-sm text-slate-500">Badge
+                        class="home-trust-and-credibility-bar-eyebrow-2">Badge
                         officiel</span>
                     </div>
                   </div>
                   <div
-                    class="flex items-center gap-2 p-2.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                    class="home-trust-and-credibility-bar-content-card">
                     <span
-                      class="material-symbols-outlined text-emerald-600 text-[20px]">group</span>
-                    <div class="flex flex-col">
+                      class="home-trust-and-credibility-bar-icon material-symbols-outlined">group</span>
+                    <div class="home-trust-and-credibility-bar-content-stack">
                       <span
-                        class="font-label-sm text-label-sm font-semibold text-slate-900">3,400+</span>
+                        class="home-trust-and-credibility-bar-eyebrow">3,400+</span>
                       <span
-                        class="font-label-sm text-label-sm text-slate-500">Apprenants
+                        class="home-trust-and-credibility-bar-eyebrow-2">Apprenants
                         formés</span>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- Right Column: Interactive Attack Radar & Cyber-Shield Visual Graphic -->
-              <div class="lg:col-span-5 relative">
+              <div class="home-right-column-interactive-attack-rada-content-container">
                 <div
-                  class="absolute -inset-4 bg-gradient-to-tr from-sky-200/50 via-slate-100 to-emerald-200/40 rounded-3xl blur-2xl -z-10"></div>
+                  class="home-right-column-interactive-attack-rada-content-card"></div>
                 <div
-                  class="bg-white p-6 rounded-2xl border border-slate-200 shadow-lg flex flex-col gap-5 relative overflow-hidden">
+                  class="home-right-column-interactive-attack-rada-content-card-2">
                   <!-- Simulated Radar Header -->
                   <div
-                    class="flex items-center justify-between pb-3 border-b border-slate-100">
-                    <div class="flex items-center gap-2.5">
+                    class="home-simulated-radar-header-content-row">
+                    <div class="home-simulated-radar-header-content-row-2">
                       <div
-                        class="w-3 h-3 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]"></div>
+                        class="home-simulated-radar-header-content-card"></div>
                       <span
-                        class="font-label-md text-label-md font-bold uppercase tracking-wider text-slate-900">Console
+                        class="home-simulated-radar-header-eyebrow">Console
                         d'Analyse CyberShield</span>
                     </div>
                     <span
-                      class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-emerald-50 border border-emerald-200 text-emerald-700 font-bold">
+                      class="home-simulated-radar-header-status-badge">
                       Système Protégé (100%)
                     </span>
                   </div>
                   <!-- Radar Graphic Representation -->
                   <div
-                    class="relative w-full aspect-square max-h-[300px] bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-center overflow-hidden">
+                    class="home-radar-graphic-representation-content-card">
                     <!-- Radial Grid Rings -->
                     <div
-                      class="absolute w-[240px] h-[240px] rounded-full border border-slate-200 bg-white/40"></div>
+                      class="home-radial-grid-rings-content-card"></div>
                     <div
-                      class="absolute w-[170px] h-[170px] rounded-full border border-slate-200 bg-white/60"></div>
+                      class="home-radial-grid-rings-content-card-2"></div>
                     <div
-                      class="absolute w-[95px] h-[95px] rounded-full border border-slate-200 bg-white/80"></div>
+                      class="home-radial-grid-rings-content-card-3"></div>
                     <!-- Crosshair Lines -->
-                    <div class="absolute w-full h-px bg-slate-200"></div>
-                    <div class="absolute h-full w-px bg-slate-200"></div>
+                    <div class="home-crosshair-lines-content-container"></div>
+                    <div class="home-crosshair-lines-content-container-2"></div>
                     <!-- Rotating Scan Sweep Ray -->
                     <div
-                      class="absolute inset-0 origin-center animate-[spin_6s_linear_infinite] pointer-events-none">
+                      class="home-rotating-scan-sweep-ray-content-container">
                       <div
-                        class="w-1/2 h-1/2 bg-gradient-to-br from-sky-400/20 to-transparent"></div>
+                        class="home-rotating-scan-sweep-ray-content-container-2"></div>
                     </div>
                     <!-- Network Threat Points (Neutralized) -->
                     <div
-                      class="absolute top-12 left-10 flex items-center gap-1.5 bg-white border border-rose-200 px-2.5 py-1 rounded-md shadow-sm animate-pulse">
-                      <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+                      class="home-network-threat-points-content-card">
+                      <span class="home-network-threat-points-status-badge"></span>
                       <span
-                        class="font-label-sm text-label-sm text-rose-600 font-semibold">Phishing
+                        class="home-network-threat-points-eyebrow">Phishing
                         Détecté</span>
                     </div>
                     <div
-                      class="absolute bottom-10 right-10 flex items-center gap-1.5 bg-white border border-emerald-200 px-2.5 py-1 rounded-md shadow-sm">
-                      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                      class="home-network-threat-points-content-card-2">
+                      <span class="home-network-threat-points-status-badge-2"></span>
                       <span
-                        class="font-label-sm text-label-sm text-emerald-700 font-semibold">2FA
+                        class="home-network-threat-points-eyebrow-2">2FA
                         Actif</span>
                     </div>
                     <div
-                      class="absolute top-18 right-12 flex items-center gap-1.5 bg-white border border-sky-200 px-2.5 py-1 rounded-md shadow-sm">
-                      <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+                      class="home-network-threat-points-content-card-3">
+                      <span class="home-network-threat-points-status-badge-3"></span>
                       <span
-                        class="font-label-sm text-label-sm text-sky-700 font-semibold">Pare-feu
+                        class="home-network-threat-points-eyebrow-3">Pare-feu
                         OK</span>
                     </div>
                     <!-- Central Cyber Defense Shield -->
                     <div
-                      class="relative z-10 w-20 h-20 rounded-2xl bg-white border border-sky-100 flex flex-col items-center justify-center shadow-lg">
+                      class="home-central-cyber-defense-shield-content-card">
                       <span
-                        class="material-symbols-outlined text-primary text-[36px] icon-filled">security</span>
+                        class="home-central-cyber-defense-shield-icon material-symbols-outlined icon-filled">security</span>
                       <span
-                        class="font-label-sm text-label-sm text-primary font-bold">VIGILANCE</span>
+                        class="home-central-cyber-defense-shield-eyebrow">VIGILANCE</span>
                     </div>
                   </div>
                   <!-- Terminal Diagnostic Activity Ticker -->
                   <div
-                    class="bg-slate-50 border border-slate-200 p-3.5 rounded-lg flex flex-col gap-1.5 font-mono text-[12px] text-slate-600">
+                    class="home-terminal-diagnostic-activity-ticker-content-card">
                     <div
-                      class="flex items-center justify-between pb-1 border-b border-slate-200/60">
+                      class="home-terminal-diagnostic-activity-ticker-content-row">
                       <span
-                        class="text-emerald-700 font-semibold flex items-center gap-1">
+                        class="home-terminal-diagnostic-activity-ticker-inline-text">
                         <span
-                          class="material-symbols-outlined text-[14px]">terminal</span>
+                          class="home-terminal-diagnostic-activity-ticker-icon material-symbols-outlined">terminal</span>
                         <span>sim://sandbox-session-01</span>
                       </span>
                       <span
-                        class="text-slate-500 font-label-sm font-semibold tracking-wider">LIVE
+                        class="home-terminal-diagnostic-activity-ticker-eyebrow">LIVE
                         FEED</span>
                     </div>
-                    <p class="truncate text-slate-800">&gt; Tentative de
+                    <p class="home-terminal-diagnostic-activity-ticker-body-copy">&gt; Tentative de
                       harponnage interceptée dans le simulateur.</p>
-                    <p class="truncate text-sky-700 font-medium">&gt; Règle de
+                    <p class="home-terminal-diagnostic-activity-ticker-body-copy-2">&gt; Règle de
                       filtrage automatique appliquée avec succès.</p>
                   </div>
                 </div>
@@ -335,36 +333,36 @@
           </section>
         </div>
         <!-- SECTION 2: 3 CORE BENEFITS CARDS -->
-        <section class="max-w-[1280px] mx-auto px-margin py-16 w-full">
-          <div class="flex flex-col items-start gap-space-xs mb-10">
+        <section class="home-3-core-benefits-cards-content-section">
+          <div class="home-3-core-benefits-cards-content-stack">
             <span
-              class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Pédagogie
+              class="home-3-core-benefits-cards-eyebrow">Pédagogie
               active</span>
             <h2
-              class="font-headline-lg text-headline-lg text-slate-900">Pourquoi
+              class="home-3-core-benefits-cards-section-title">Pourquoi
               apprendre avec CyberShield ?</h2>
-            <p class="font-body-md text-body-md text-slate-600 max-w-2xl">
+            <p class="home-3-core-benefits-cards-body-copy">
               Une approche bienveillante et pragmatique conçue pour éliminer la
               peur de l'informatique et développer des réflexes d'autodéfense
               numérique durables.
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <div class="home-3-core-benefits-cards-content-grid">
             <!-- Benefit Card 1 -->
             <div
-              class="group relative bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-sky-300 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-              <div class="flex flex-col gap-space-md">
+              class="home-benefit-card-1-content-card hover-group">
+              <div class="home-benefit-card-1-content-stack">
                 <div
-                  class="w-14 h-14 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-primary shadow-sm group-hover:scale-105 group-hover:bg-primary group-hover:text-white transition-all">
+                  class="home-benefit-card-1-content-card-2">
                   <span
-                    class="material-symbols-outlined text-[32px]">motion_photos_on</span>
+                    class="home-benefit-card-1-icon material-symbols-outlined">motion_photos_on</span>
                 </div>
-                <div class="flex flex-col gap-space-xs">
+                <div class="home-benefit-card-1-content-stack-2">
                   <h3
-                    class="font-headline-sm text-headline-sm text-slate-900 font-semibold group-hover:text-primary transition-colors">Animations
+                    class="home-benefit-card-1-card-title">Animations
                     pédagogiques</h3>
                   <p
-                    class="font-body-md text-body-md text-slate-600 leading-relaxed">
+                    class="home-benefit-card-1-body-copy">
                     Visualisez le parcours exact d'une cyberattaque pas à pas
                     avec explications claires et audio guidé pour chaque étape
                     critique.
@@ -372,27 +370,27 @@
                 </div>
               </div>
               <div
-                class="pt-6 flex items-center gap-2 text-primary font-label-md text-label-md font-semibold">
+                class="home-benefit-card-1-content-row">
                 <span>Observer le flux d'attaque</span>
                 <span
-                  class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">east</span>
+                  class="home-benefit-card-1-icon-2 material-symbols-outlined">east</span>
               </div>
             </div>
             <!-- Benefit Card 2 -->
             <div
-              class="group relative bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-emerald-300 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-              <div class="flex flex-col gap-space-md">
+              class="home-benefit-card-2-content-card hover-group">
+              <div class="home-benefit-card-2-content-stack">
                 <div
-                  class="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 shadow-sm group-hover:scale-105 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+                  class="home-benefit-card-2-content-card-2">
                   <span
-                    class="material-symbols-outlined text-[32px]">gpp_maybe</span>
+                    class="home-benefit-card-2-icon material-symbols-outlined">gpp_maybe</span>
                 </div>
-                <div class="flex flex-col gap-space-xs">
+                <div class="home-benefit-card-2-content-stack-2">
                   <h3
-                    class="font-headline-sm text-headline-sm text-slate-900 font-semibold group-hover:text-emerald-600 transition-colors">Pratique
+                    class="home-benefit-card-2-card-title">Pratique
                     sans risque</h3>
                   <p
-                    class="font-body-md text-body-md text-slate-600 leading-relaxed">
+                    class="home-benefit-card-2-body-copy">
                     Expérimentez des faux emails et pièges réalistes dans un bac
                     à sable 100% sécurisé et bienveillant sans jamais
                     compromettre votre machine.
@@ -400,320 +398,320 @@
                 </div>
               </div>
               <div
-                class="pt-6 flex items-center gap-2 text-emerald-600 font-label-md text-label-md font-semibold">
+                class="home-benefit-card-2-content-row">
                 <span>Tester sans conséquence</span>
                 <span
-                  class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">east</span>
+                  class="home-benefit-card-2-icon-2 material-symbols-outlined">east</span>
               </div>
             </div>
             <!-- Benefit Card 3 -->
             <div
-              class="group relative bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-indigo-300 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-              <div class="flex flex-col gap-space-md">
+              class="home-benefit-card-3-content-card hover-group">
+              <div class="home-benefit-card-3-content-stack">
                 <div
-                  class="w-14 h-14 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 shadow-sm group-hover:scale-105 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                  class="home-benefit-card-3-content-card-2">
                   <span
-                    class="material-symbols-outlined text-[32px]">social_leaderboard</span>
+                    class="home-benefit-card-3-icon material-symbols-outlined">social_leaderboard</span>
                 </div>
-                <div class="flex flex-col gap-space-xs">
+                <div class="home-benefit-card-3-content-stack-2">
                   <h3
-                    class="font-headline-sm text-headline-sm text-slate-900 font-semibold group-hover:text-indigo-600 transition-colors">Suivi
+                    class="home-benefit-card-3-card-title">Suivi
                     de progression &amp; Quiz</h3>
                   <p
-                    class="font-body-md text-body-md text-slate-600 leading-relaxed">
+                    class="home-benefit-card-3-body-copy">
                     Validez vos réflexes avec des quiz interactifs immédiats et
                     obtenez votre badge de compétences attestant de vos acquis.
                   </p>
                 </div>
               </div>
               <div
-                class="pt-6 flex items-center gap-2 text-indigo-600 font-label-md text-label-md font-semibold">
+                class="home-benefit-card-3-content-row">
                 <span>Mesurer vos résultats</span>
                 <span
-                  class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">east</span>
+                  class="home-benefit-card-3-icon-2 material-symbols-outlined">east</span>
               </div>
             </div>
           </div>
         </section>
         <!-- SECTION 3: PREVIEW OF THE 3 MODULES -->
-        <section class="max-w-[1280px] mx-auto px-margin py-16 w-full"
+        <section class="home-preview-of-the-3-modules-content-section"
           id="modules-preview">
           <div
-            class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-12">
-            <div class="flex flex-col gap-space-xs">
+            class="home-preview-of-the-3-modules-content-stack">
+            <div class="home-preview-of-the-3-modules-content-stack-2">
               <span
-                class="font-label-md text-label-md uppercase tracking-wider text-emerald-700 font-bold">Parcours
+                class="home-preview-of-the-3-modules-eyebrow">Parcours
                 structuré</span>
-              <h2 class="font-headline-lg text-headline-lg text-slate-900">Les 3
+              <h2 class="home-preview-of-the-3-modules-section-title">Les 3
                 modules essentiels pour démarrer</h2>
-              <p class="font-body-md text-body-md text-slate-600 max-w-xl">
+              <p class="home-preview-of-the-3-modules-body-copy">
                 Chaque module comprend une animation commentée et un test
                 pratique immersif pour valider vos réflexes.
               </p>
             </div>
             <a
-              class="inline-flex items-center gap-space-xs px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-700 hover:text-primary hover:border-sky-300 font-label-md text-label-md font-semibold shadow-sm hover:bg-slate-50 transition-all"
+              class="home-preview-of-the-3-modules-navigation-link"
               data-path="modules-de-formation" href="#">
               <span>Explorer le catalogue complet</span>
               <span
-                class="material-symbols-outlined text-[18px]">open_in_new</span>
+                class="home-preview-of-the-3-modules-icon material-symbols-outlined">open_in_new</span>
             </a>
           </div>
           <!-- 3 Modules Grid -->
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+          <div class="home-3-modules-grid-content-grid">
             <!-- MODULE 1: Hameçonnage (Phishing) -->
             <div
-              class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-sky-300 hover:-translate-y-1 transition-all flex flex-col justify-between group">
+              class="home-module-1-hame-onnage-content-card hover-group">
               <div>
                 <!-- Module Visual Header -->
                 <div
-                  class="relative h-44 w-full bg-slate-100 overflow-hidden flex items-center justify-center">
+                  class="home-module-visual-header-content-row">
                   <img
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    class="home-module-visual-header-image"
                     data-alt="A futuristic cybersecurity 3D rendering showing a high-tech glowing envelope surrounded by digital padlock shields in deep navy blue, cyan and emerald tones, isometric studio lighting, hyper-detailed clean tech render."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMf2E4omjUWNfdlGlcuILJhkMVZFLKOREpAuS9ioj7MR88wnO_Vd4JxiUyCO8RLYG7dumT8bV4h1_gScMyNaHhqaKXbsWrhvj3f9tcxpIG1v2Q1rGO9APUjjkz3un-XArxmQU9ztNdGuJqqUEiU8JaQbeqEFjFxqOlMpZvDVZVkpipnq9qJ1wdAVUDr0HnGRd9ujqiFYnHpaLboaHuN1UTQM7uK8CdQapNI4TdCmw3fUwjf8VxWHvP" />
                   <div
-                    class="absolute inset-0 bg-gradient-to-t from-white via-white/30 to-transparent"></div>
-                  <div class="absolute top-4 start-4 flex items-center gap-2">
+                    class="home-module-visual-header-content-container"></div>
+                  <div class="home-module-visual-header-content-row-2">
                     <span
-                      class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-emerald-100/90 text-emerald-800 backdrop-blur-md shadow-sm">
+                      class="home-module-visual-header-status-badge">
                       Débutant
                     </span>
                     <span
-                      class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-white/90 text-slate-700 backdrop-blur-md shadow-sm flex items-center gap-1">
+                      class="home-module-visual-header-status-badge-2">
                       <span
-                        class="material-symbols-outlined text-[14px]">schedule</span>
+                        class="home-module-visual-header-icon material-symbols-outlined">schedule</span>
                       15 min
                     </span>
                   </div>
                   <!-- Completed indicator pill -->
                   <div
-                    class="absolute bottom-3 end-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-600 text-white font-label-sm text-label-sm font-bold shadow-md">
+                    class="home-completed-indicator-pill-content-card">
                     <span
-                      class="material-symbols-outlined text-[16px]">check_circle</span>
+                      class="home-completed-indicator-pill-icon material-symbols-outlined">check_circle</span>
                     <span>Validé</span>
                   </div>
                 </div>
                 <!-- Module Details Content -->
-                <div class="p-6 flex flex-col gap-space-sm">
+                <div class="home-module-details-content-content-stack">
                   <div
-                    class="flex items-center gap-2 text-primary font-label-md text-label-md font-bold uppercase tracking-wider">
+                    class="home-module-details-content-content-row">
                     <span>Module 01</span>
                     <span>•</span>
                     <span>Ingénierie Sociale</span>
                   </div>
                   <h3
-                    class="font-headline-sm text-headline-sm text-slate-900 font-bold group-hover:text-primary transition-colors">
+                    class="home-module-details-content-card-title">
                     Hameçonnage (Phishing)
                   </h3>
                   <p
-                    class="font-body-sm text-body-sm text-slate-600 line-clamp-2">
+                    class="home-module-details-content-body-copy">
                     Repérez les indices subtils dans les courriels frauduleux,
                     les faux liens et les pièces jointes piégées avant de
                     cliquer.
                   </p>
                 </div>
               </div>
-              <div class="p-6 pt-0 flex flex-col gap-space-md">
+              <div class="home-section-3-content-stack">
                 <!-- Progress bar -->
-                <div class="flex flex-col gap-1">
+                <div class="home-progress-bar-content-stack">
                   <div
-                    class="flex items-center justify-between font-label-sm text-label-sm">
-                    <span class="text-slate-500">Progression</span>
-                    <span class="text-emerald-700 font-bold">100%
+                    class="home-progress-bar-content-row">
+                    <span class="home-progress-bar-inline-text">Progression</span>
+                    <span class="home-progress-bar-inline-text-2">100%
                       complété</span>
                   </div>
                   <div
-                    class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                    class="home-progress-bar-content-card">
                     <div
-                      class="w-full h-full bg-emerald-500 rounded-full"></div>
+                      class="home-progress-bar-content-card-2"></div>
                   </div>
                 </div>
                 <a
-                  class="w-full py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-center font-label-md text-label-md font-semibold transition-all flex items-center justify-center gap-2"
+                  class="home-progress-bar-navigation-link"
                   data-path="modules-de-formation" href="#">
                   <span>Revoir la simulation</span>
                   <span
-                    class="material-symbols-outlined text-[16px]">replay</span>
+                    class="home-progress-bar-icon material-symbols-outlined">replay</span>
                 </a>
               </div>
             </div>
             <!-- MODULE 2: Mots de passe & Double Facteur -->
             <div
-              class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-sky-300 hover:-translate-y-1 transition-all flex flex-col justify-between group">
+              class="home-module-2-mots-de-passe-and-double-fa-content-card hover-group">
               <div>
                 <!-- Module Visual Header -->
                 <div
-                  class="relative h-44 w-full bg-slate-100 overflow-hidden flex items-center justify-center">
+                  class="home-module-visual-header-content-row">
                   <img
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    class="home-module-visual-header-image"
                     data-alt="A 3D cybersecurity concept of two-factor authentication, an illuminated futuristic smartphone displaying a security lock code with glowing cyan holographic biometric authentication shield, dark room aesthetic with neon cyan and green reflections."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBSya7jQ1_O9Y1seL_by9b4b7tqD7_DdkzSgIHkiF02i_CJltLxIUNM-g4qpk0MW4oJvSNbTVLkH_8zE8KmhLv9wBNZm1frLudCBUDW56Ivozbk58m8DbHszwTrQD3L1Rpcm1uybBcTiM3uzFlLanVOpCrUXP0VLiLb_lrnrQJM5LMhKf2Tlswnpcl3sR2i5iAezowdmHOdcJ39DgDWohFGb6XuGfYbSxnKb1IbtBqsIxyAhnc_D2Y" />
                   <div
-                    class="absolute inset-0 bg-gradient-to-t from-white via-white/30 to-transparent"></div>
-                  <div class="absolute top-4 start-4 flex items-center gap-2">
+                    class="home-module-visual-header-content-container"></div>
+                  <div class="home-module-visual-header-content-row-2">
                     <span
-                      class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-emerald-100/90 text-emerald-800 backdrop-blur-md shadow-sm">
+                      class="home-module-visual-header-status-badge">
                       Débutant
                     </span>
                     <span
-                      class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-white/90 text-slate-700 backdrop-blur-md shadow-sm flex items-center gap-1">
+                      class="home-module-visual-header-status-badge-2">
                       <span
-                        class="material-symbols-outlined text-[14px]">schedule</span>
+                        class="home-module-visual-header-icon material-symbols-outlined">schedule</span>
                       12 min
                     </span>
                   </div>
                   <!-- In progress badge -->
                   <div
-                    class="absolute bottom-3 end-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary text-white font-label-sm text-label-sm font-bold shadow-md">
+                    class="home-in-progress-badge-content-card">
                     <span
-                      class="material-symbols-outlined text-[16px]">pending</span>
+                      class="home-in-progress-badge-icon material-symbols-outlined">pending</span>
                     <span>En cours</span>
                   </div>
                 </div>
                 <!-- Module Details Content -->
-                <div class="p-6 flex flex-col gap-space-sm">
+                <div class="home-module-details-content-content-stack">
                   <div
-                    class="flex items-center gap-2 text-primary font-label-md text-label-md font-bold uppercase tracking-wider">
+                    class="home-module-details-content-content-row">
                     <span>Module 02</span>
                     <span>•</span>
                     <span>Identité &amp; Accès</span>
                   </div>
                   <h3
-                    class="font-headline-sm text-headline-sm text-slate-900 font-bold group-hover:text-primary transition-colors">
+                    class="home-module-details-content-card-title">
                     Mots de passe &amp; Double Facteur
                   </h3>
                   <p
-                    class="font-body-sm text-body-sm text-slate-600 line-clamp-2">
+                    class="home-module-details-content-body-copy">
                     Construisez des clés inviolables, configurez les
                     applications d'authentification 2FA et comprenez les
                     gestionnaires de coffre-fort.
                   </p>
                 </div>
               </div>
-              <div class="p-6 pt-0 flex flex-col gap-space-md">
+              <div class="home-section-3-content-stack">
                 <!-- Progress bar -->
-                <div class="flex flex-col gap-1">
+                <div class="home-progress-bar-content-stack">
                   <div
-                    class="flex items-center justify-between font-label-sm text-label-sm">
-                    <span class="text-slate-500">Progression</span>
-                    <span class="text-primary font-bold">Étape 2 / 4</span>
+                    class="home-progress-bar-content-row">
+                    <span class="home-progress-bar-inline-text">Progression</span>
+                    <span class="home-progress-bar-inline-text-3">Étape 2 / 4</span>
                   </div>
                   <div
-                    class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
-                    <div class="w-1/2 h-full bg-primary rounded-full"></div>
+                    class="home-progress-bar-content-card">
+                    <div class="home-progress-bar-content-card-3"></div>
                   </div>
                 </div>
                 <a
-                  class="w-full py-2.5 px-4 rounded-xl bg-primary hover:bg-sky-700 text-white text-center font-label-md text-label-md font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2"
+                  class="home-progress-bar-navigation-link-2"
                   data-path="modules-de-formation" href="#">
                   <span>Continuer la leçon</span>
                   <span
-                    class="material-symbols-outlined text-[16px]">play_arrow</span>
+                    class="home-progress-bar-icon material-symbols-outlined">play_arrow</span>
                 </a>
               </div>
             </div>
             <!-- MODULE 3: Attaques DDoS & Saturation -->
             <div
-              class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-sky-300 hover:-translate-y-1 transition-all flex flex-col justify-between group">
+              class="home-module-3-attaques-ddos-and-saturatio-content-card hover-group">
               <div>
                 <!-- Module Visual Header -->
                 <div
-                  class="relative h-44 w-full bg-slate-100 overflow-hidden flex items-center justify-center">
+                  class="home-module-visual-header-content-row">
                   <img
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    class="home-module-visual-header-image"
                     data-alt="An artistic 3D visualization of server infrastructure with glowing network packets deflecting against a cyan digital shield dome, preventing server saturation overload, dark ambient blue server room background."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFjJMCrsbJ1vvyRUb6C4vQKoeum3Z-2OIFN8UF_XHlVsAPYYC3NNYk7cjqllC2mNiC8iZ9jcuvEGYAkqWreZPagGfwDpq29O4cjXzThDnk5r0F6tFXvqIgEWBtn5TfGUg-x3mesACNJadFGVOBVmV-s72L5DzlVLagDq8MaqViESr1kRZselQ1bgpm4bmMGP6icyy0gYfrwW62aGKsYsjTYcMwZBwExF1LkxZ3Rer_QN-h2pDOxY7R" />
                   <div
-                    class="absolute inset-0 bg-gradient-to-t from-white via-white/30 to-transparent"></div>
-                  <div class="absolute top-4 start-4 flex items-center gap-2">
+                    class="home-module-visual-header-content-container"></div>
+                  <div class="home-module-visual-header-content-row-2">
                     <span
-                      class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-emerald-100/90 text-emerald-800 backdrop-blur-md shadow-sm">
+                      class="home-module-visual-header-status-badge">
                       Débutant
                     </span>
                     <span
-                      class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-white/90 text-slate-700 backdrop-blur-md shadow-sm flex items-center gap-1">
+                      class="home-module-visual-header-status-badge-2">
                       <span
-                        class="material-symbols-outlined text-[14px]">schedule</span>
+                        class="home-module-visual-header-icon material-symbols-outlined">schedule</span>
                       18 min
                     </span>
                   </div>
                   <!-- Locked / Not started badge -->
                   <div
-                    class="absolute bottom-3 end-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-200 text-slate-700 font-label-sm text-label-sm font-semibold shadow-sm">
+                    class="home-locked-not-started-badge-content-card">
                     <span
-                      class="material-symbols-outlined text-[16px]">lock_open</span>
+                      class="home-locked-not-started-badge-icon material-symbols-outlined">lock_open</span>
                     <span>À démarrer</span>
                   </div>
                 </div>
                 <!-- Module Details Content -->
-                <div class="p-6 flex flex-col gap-space-sm">
+                <div class="home-module-details-content-content-stack">
                   <div
-                    class="flex items-center gap-2 text-primary font-label-md text-label-md font-bold uppercase tracking-wider">
+                    class="home-module-details-content-content-row">
                     <span>Module 03</span>
                     <span>•</span>
                     <span>Résilience Réseau</span>
                   </div>
                   <h3
-                    class="font-headline-sm text-headline-sm text-slate-900 font-bold group-hover:text-primary transition-colors">
+                    class="home-module-details-content-card-title">
                     Attaques DDoS &amp; Saturation
                   </h3>
                   <p
-                    class="font-body-sm text-body-sm text-slate-600 line-clamp-2">
+                    class="home-module-details-content-body-copy">
                     Démystifiez les réseaux de machines zombies (botnets) et
                     observez comment les filtres absorbent les vagues de
                     requêtes massives.
                   </p>
                 </div>
               </div>
-              <div class="p-6 pt-0 flex flex-col gap-space-md">
+              <div class="home-section-3-content-stack">
                 <!-- Progress bar -->
-                <div class="flex flex-col gap-1">
+                <div class="home-progress-bar-content-stack">
                   <div
-                    class="flex items-center justify-between font-label-sm text-label-sm">
-                    <span class="text-slate-500">Progression</span>
-                    <span class="text-slate-500 font-medium">0% (Nouveau)</span>
+                    class="home-progress-bar-content-row">
+                    <span class="home-progress-bar-inline-text">Progression</span>
+                    <span class="home-progress-bar-inline-text-4">0% (Nouveau)</span>
                   </div>
                   <div
-                    class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
-                    <div class="w-0 h-full bg-emerald-500 rounded-full"></div>
+                    class="home-progress-bar-content-card">
+                    <div class="home-progress-bar-content-card-4"></div>
                   </div>
                 </div>
                 <a
-                  class="w-full py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-center font-label-md text-label-md font-semibold transition-all flex items-center justify-center gap-2"
+                  class="home-progress-bar-navigation-link"
                   data-path="modules-de-formation" href="#">
                   <span>Débuter le module</span>
                   <span
-                    class="material-symbols-outlined text-[16px]">play_arrow</span>
+                    class="home-progress-bar-icon material-symbols-outlined">play_arrow</span>
                 </a>
               </div>
             </div>
           </div>
           <!-- QUICK CALL-TO-ACTION BANNER -->
           <div
-            class="mt-16 bg-gradient-to-r from-sky-50 via-sky-50/50 to-emerald-50/60 border border-sky-200 p-8 md:p-12 rounded-3xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-lg relative overflow-hidden">
+            class="home-quick-call-to-action-banner-content-card">
             <div
-              class="absolute -end-16 -top-16 w-64 h-64 bg-emerald-200/40 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="flex flex-col gap-2 text-start z-10 max-w-xl">
+              class="home-quick-call-to-action-banner-content-card-2"></div>
+            <div class="home-quick-call-to-action-banner-content-stack">
               <span
-                class="font-label-md text-label-md font-bold uppercase tracking-wider text-emerald-700">Passez
+                class="home-quick-call-to-action-banner-eyebrow">Passez
                 à l'action dès aujourd'hui</span>
               <h3
-                class="font-headline-lg text-headline-lg text-slate-900 font-extrabold">
+                class="home-quick-call-to-action-banner-card-title">
                 Prêt à sécuriser votre quotidien numérique ?
               </h3>
-              <p class="font-body-md text-body-md text-slate-600">
+              <p class="home-quick-call-to-action-banner-body-copy">
                 Aucun prérequis technique demandé. Prenez 15 minutes pour vous
                 prémunir durablement contre 90% des pièges en ligne.
               </p>
             </div>
             <div
-              class="flex items-center gap-space-md z-10 shrink-0 w-full md:w-auto">
+              class="home-quick-call-to-action-banner-content-row">
               <a
-                class="w-full md:w-auto inline-flex items-center justify-center gap-space-sm px-8 py-4 rounded-xl bg-primary text-white font-label-lg text-label-lg font-bold shadow-[0_4px_20px_rgba(2,132,199,0.3)] hover:shadow-[0_6px_25px_rgba(2,132,199,0.45)] hover:bg-sky-700 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                class="home-quick-call-to-action-banner-navigation-link"
                 data-path="modules-de-formation" href="#">
                 <span>Lancer le premier module</span>
-                <span class="material-symbols-outlined text-[20px]">bolt</span>
+                <span class="home-quick-call-to-action-banner-icon material-symbols-outlined">bolt</span>
               </a>
             </div>
           </div>
@@ -721,53 +719,53 @@
       </div>
     </main>
     <!-- FOOTER -->
-    <footer class="w-full bg-white border-t border-slate-200 mt-space-xl">
+    <footer class="home-footer-site-footer">
       <div
-        class="max-w-[1280px] mx-auto px-margin py-space-xl flex flex-col gap-space-xl">
+        class="home-footer-content-stack">
         <div
-          class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
-          <div class="flex flex-col gap-space-xs max-w-lg">
-            <div class="flex items-center gap-space-sm">
+          class="home-footer-content-stack-2">
+          <div class="home-footer-content-stack-3">
+            <div class="home-footer-content-row">
               <div
-                class="w-7 h-7 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center text-primary shadow-sm">
+                class="home-footer-content-card">
                 <span
-                  class="material-symbols-outlined text-[18px] icon-filled">shield</span>
+                  class="home-footer-icon material-symbols-outlined icon-filled">shield</span>
               </div>
               <span
-                class="font-headline-sm text-headline-sm font-bold text-slate-900">CyberShield
+                class="home-footer-inline-text">CyberShield
                 Academy</span>
             </div>
-            <p class="font-body-sm text-body-sm text-slate-600">Rendre la
+            <p class="home-footer-body-copy">Rendre la
               cybersécurité accessible, rassurante et engageante pour tous.</p>
           </div>
-          <div class="flex flex-wrap items-center gap-space-lg">
+          <div class="home-footer-content-row-2">
             <a
-              class="font-body-sm text-body-sm text-slate-600 hover:text-primary transition-colors"
+              class="home-footer-content-link"
               data-path="modules-de-formation" href="#">Modules</a>
             <a
-              class="font-body-sm text-body-sm text-slate-600 hover:text-primary transition-colors"
+              class="home-footer-content-link"
               data-path="pratiques-securisees" href="#">Pratiques sécurisées</a>
             <a
-              class="font-body-sm text-body-sm text-slate-600 hover:text-primary transition-colors"
+              class="home-footer-content-link"
               data-path="mentions-legales" href="#">Mentions légales</a>
             <a
-              class="font-body-sm text-body-sm text-slate-600 hover:text-primary transition-colors"
+              class="home-footer-content-link"
               data-path="mode-daccessibilite" href="#">Mode d'accessibilité</a>
           </div>
         </div>
         <div
-          class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md border-t border-slate-100 text-start">
-          <span class="font-body-sm text-body-sm text-slate-500">© 2025
+          class="home-footer-content-stack-4">
+          <span class="home-footer-inline-text-2">© 2025
             CyberShield Academy - Tous droits réservés.</span>
-          <div class="flex items-center gap-space-sm">
-            <span class="font-label-sm text-label-sm text-slate-500">Langue
+          <div class="home-footer-content-row">
+            <span class="home-footer-eyebrow">Langue
               :</span>
             <button
-              class="font-label-sm text-label-sm text-primary font-semibold hover:underline"
+              class="home-footer-button"
               data-language="fr" type="button">Français (FR)</button>
-            <span class="text-slate-300 text-body-sm">|</span>
+            <span class="home-footer-inline-text-3">|</span>
             <button
-              class="font-label-sm text-label-sm text-slate-500 hover:text-primary hover:underline"
+              class="home-footer-button-2"
               data-language="ar" type="button">العربية (AR)</button>
           </div>
         </div>

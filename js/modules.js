@@ -6,35 +6,7 @@ document.querySelectorAll("[data-category-filter]").forEach((button) => {
 
     buttons.forEach((filterButton) => {
       const isActive = filterButton.dataset.category === category;
-      if (isActive) {
-        filterButton.classList.remove(
-          "bg-white",
-          "text-slate-700",
-          "border",
-          "border-slate-200",
-          "hover:bg-slate-100",
-        );
-        filterButton.classList.add(
-          "bg-sky-600",
-          "text-white",
-          "shadow-sm",
-          "hover:bg-sky-700",
-        );
-      } else {
-        filterButton.classList.remove(
-          "bg-sky-600",
-          "text-white",
-          "shadow-sm",
-          "hover:bg-sky-700",
-        );
-        filterButton.classList.add(
-          "bg-white",
-          "text-slate-700",
-          "border",
-          "border-slate-200",
-          "hover:bg-slate-100",
-        );
-      }
+      filterButton.classList.toggle("is-active", isActive);
     });
 
     cards.forEach((card) => {

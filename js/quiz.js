@@ -1,5 +1,5 @@
 document.querySelectorAll("#answers-container button").forEach((button) => {
   button.addEventListener("click", () => {
-    button.classList.add("bg-slate-100");
+    button.classList.add("is-selected");
   });
 });
