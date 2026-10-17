@@ -10203,3 +10203,87 @@ to {
   opacity: 0.5;
 }
 }
+/* Interaction states for Simulation & Quiz */
+.simulation-step-card.is-active,
+[class*="simulation-step-"].is-active {
+  border-color: #0284c7 !important;
+  background-color: #f0f9ff !important;
+}
+
+.simulation-step-card.is-completed,
+[class*="simulation-step-"].is-completed {
+  border-color: #10b981 !important;
+  background-color: #f0fdf4 !important;
+}
+
+.quiz-answer-option:hover:not(:disabled) {
+  border-color: #0284c7 !important;
+  background-color: #f8fafc !important;
+}
+
+.quiz-answer-option.is-selected {
+  border-color: #0284c7 !important;
+  background-color: #f0f9ff !important;
+}
+
+/* RTL layout helpers */
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .home-header-brand-link,
+html[dir="rtl"] .modules-site-header-brand-link,
+html[dir="rtl"] .quiz-site-header-brand-link,
+html[dir="rtl"] .simulation-top-navigation-brand-link,
+html[dir="rtl"] .results-top-navigation-brand-link {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+html[dir="rtl"] .material-symbols-outlined {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .material-symbols-outlined.no-rtl-flip {
+  transform: none;
+}
+
+/* Print styles for Certificate */
+@media print {
+  header,
+  footer,
+  .results-celebration-top-ribbon-with-micro-gl-content-container,
+  .results-left-column-circular-score-gauge-and-content-stack,
+  .results-earned-digital-badge-card-content-card,
+  .results-interactive-navigation-matrix-and-pr-content-card,
+  .results-discreet-back-navigation-link-content-row,
+  .results-download-action-button-button,
+  .home-header-site-header,
+  .home-footer-site-footer {
+    display: none !important;
+  }
+
+  body, html {
+    background: #fff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .results-main-bento-grid-section-score-questi-content-grid {
+    display: block !important;
+  }
+
+  .results-right-column-badge-trophy-and-offici-content-stack {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .results-official-certificate-preview-card-content-card {
+    border: 3px solid #0284c7 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid !important;
+    margin: 2cm auto !important;
+    width: 90% !important;
+  }
+}
