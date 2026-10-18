@@ -148,7 +148,7 @@
     // Replace static name with input field
     const certNameContainer = certName ? certName.parentElement : null;
     if (certNameContainer && certName) {
-      const savedName = localStorage.getItem('cybershield_username') || '';
+      const savedName = localStorage.getItem('cybershield_username') || 'Khaoula S.';
       const inputWrapper = document.createElement('div');
       inputWrapper.style.cssText = 'display:flex;flex-direction:column;align-items:center;gap:0.375rem;';
       inputWrapper.innerHTML = `
@@ -272,7 +272,7 @@
 
     downloadBtn.addEventListener('click', () => {
       const nameInput = document.getElementById('cert-name-input');
-      const name = nameInput ? nameInput.value || 'Cyber-Défenseur' : 'Cyber-Défenseur';
+      const name = nameInput ? nameInput.value || 'Khaoula S.' : 'Khaoula S.';
       const { certId, today, mod } = window._certData || {};
 
       // Build print window
