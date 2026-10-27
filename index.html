@@ -33,7 +33,7 @@
               <span class="home-header-eyebrow">Plateforme d'apprentissage interactif</span>
             </div>
           </a>
-          <nav class="home-header-primary-navigation hidden" data-active-classes="bg-sky-50 text-primary font-bold rounded-xl border border-sky-100">
+          <nav class="home-header-primary-navigation" data-active-classes="bg-sky-50 text-primary font-bold rounded-xl border border-sky-100">
             <a aria-current="page" class="home-header-content-link" data-path="accueil" href="index.html">Accueil</a>
             <a class="home-header-navigation-link" data-path="modules-de-formation" href="modules.html">Modules de formation</a>
             <a class="home-header-navigation-link" data-path="simulations-et-quiz" href="simulation.html">Simulations &amp; Quiz</a>
@@ -42,7 +42,7 @@
         </div>
         <div class="home-header-content-row-3">
           <!-- Progress Capsule -->
-          <div class="home-progress-capsule-content-card hidden" data-progress-capsule>
+          <div class="home-progress-capsule-content-card" data-progress-capsule>
             <div class="home-progress-capsule-content-row">
               <div class="home-progress-capsule-content-card-2"></div>
               <div class="home-progress-capsule-content-card-3"></div>
@@ -78,9 +78,55 @@
               <span class="home-user-avatar-eyebrow-2">Étudiante</span>
             </div>
           </div>
+          <!-- Mobile Menu Hamburger Button -->
+          <button class="home-mobile-menu-toggle" id="mobile-menu-toggle" type="button" aria-label="Menu de navigation" aria-expanded="false" aria-controls="mobile-nav-drawer">
+            <span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
+          </button>
         </div>
       </div>
     </header>
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+    <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Navigation mobile">
+      <div class="mobile-nav-header">
+        <div class="mobile-nav-brand">
+          <img alt="CyberShield Logo" class="mobile-nav-logo" src="assets/images/cybershield-logo.svg" />
+          <span class="mobile-nav-title">CyberShield</span>
+        </div>
+        <button class="mobile-nav-close" id="mobile-nav-close" type="button" aria-label="Fermer le menu">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a class="mobile-nav-link is-active" data-path="accueil" href="index.html">
+          <span class="material-symbols-outlined">home</span>
+          <span>Accueil</span>
+        </a>
+        <a class="mobile-nav-link" data-path="modules-de-formation" href="modules.html">
+          <span class="material-symbols-outlined">view_module</span>
+          <span>Modules de formation</span>
+        </a>
+        <a class="mobile-nav-link" data-path="simulations-et-quiz" href="simulation.html">
+          <span class="material-symbols-outlined">terminal</span>
+          <span>Simulations &amp; Quiz</span>
+        </a>
+        <a class="mobile-nav-link" data-path="ressources-et-astuces" href="ressources.html">
+          <span class="material-symbols-outlined">menu_book</span>
+          <span>Ressources &amp; Astuces</span>
+        </a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <div class="mobile-nav-progress">
+          <div class="mobile-nav-progress-label">
+            <span>Progression globale</span>
+            <span class="mobile-nav-progress-percent">1/3 (33%)</span>
+          </div>
+          <div class="mobile-nav-progress-track">
+            <div class="mobile-nav-progress-fill" style="width: 33%"></div>
+          </div>
+        </div>
+      </div>
+    </aside>
     <!-- MAIN CONTENT -->
     <main class="home-main-content-main-content">
       <div class="home-main-content-content-stack">
@@ -781,4 +827,5 @@
     <script src="js/progress.js"></script>
     <script src="js/language-toggle.js"></script>
     <script src="js/theme-toggle.js"></script>
+    <script src="js/mobile-nav.js"></script>
   </body></html>
