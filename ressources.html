@@ -439,16 +439,28 @@
     <script src="js/language-toggle.js"></script>
     <script src="js/theme-toggle.js"></script>
     <script>
-      // Interactive filter tabs for ressources page
+      // Interactive filter tabs for ressources page — theme-aware
+      function getTheme() {
+        return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+      }
+
       document.querySelectorAll('[data-section-filter]').forEach(button => {
         button.addEventListener('click', () => {
           const filter = button.dataset.sectionFilter;
-          
+          const isDark = getTheme() === 'dark';
+
           document.querySelectorAll('[data-section-filter]').forEach(btn => {
             const isActive = btn === button;
-            btn.style.background = isActive ? '#0284c7' : '#f1f5f9';
-            btn.style.color = isActive ? '#ffffff' : '#334155';
-            btn.style.borderColor = isActive ? 'transparent' : '#cbd5e1';
+            btn.classList.toggle('is-active', isActive);
+            if (isActive) {
+              btn.style.background = '#0284c7';
+              btn.style.color = '#ffffff';
+              btn.style.borderColor = 'transparent';
+            } else {
+              btn.style.background = isDark ? 'var(--theme-surface-high)' : '#f1f5f9';
+              btn.style.color = isDark ? 'var(--theme-text)' : '#334155';
+              btn.style.borderColor = isDark ? 'var(--theme-border)' : '#cbd5e1';
+            }
           });
 
           document.querySelectorAll('.resource-section').forEach(section => {
@@ -463,4 +475,3 @@
     </script>
   </body>
 </html>
-
