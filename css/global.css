@@ -10654,11 +10654,11 @@ html[data-theme="dark"] body .home-top-ambient-glow-field-content-card {
 }
 
 html[data-theme="dark"] body .home-top-ambient-glow-field-content-card-2 {
-  background-color: rgba(20, 83, 70, 0.4) !important;
+  background-color: rgba(16, 185, 129, 0.15) !important;
 }
 
 html[data-theme="dark"] body .home-right-column-interactive-attack-rada-content-card {
-  background-image: linear-gradient(to top right, rgba(8,50,100,0.6), rgba(8,19,39,0.8), rgba(14,55,45,0.5)) !important;
+  background-image: linear-gradient(to top right, rgba(8,50,100,0.6), rgba(8,19,39,0.8), rgba(16,185,129,0.2)) !important;
 }
 
 /* --- Home hero right panel (Console d'Analyse CyberShield) --- */
@@ -10672,14 +10672,19 @@ html[data-theme="dark"] body .home-simulated-radar-header-content-row {
   border-color: var(--theme-border) !important;
 }
 
+html[data-theme="dark"] body .home-simulated-radar-header-content-card {
+  background-color: #34d399 !important;
+  box-shadow: 0 0 6px rgba(52, 211, 153, 0.4) !important;
+}
+
 html[data-theme="dark"] body .home-simulated-radar-header-eyebrow {
   color: #f8fafc !important;
 }
 
 html[data-theme="dark"] body .home-simulated-radar-header-status-badge {
-  background-color: rgba(16, 185, 129, 0.15) !important;
-  border-color: rgba(16, 185, 129, 0.4) !important;
-  color: #34d399 !important;
+  background-color: rgba(16, 185, 129, 0.12) !important;
+  border-color: rgba(52, 211, 153, 0.28) !important;
+  color: #6ee7b7 !important;
 }
 
 /* Radar screen */
@@ -10730,12 +10735,16 @@ html[data-theme="dark"] body .home-network-threat-points-eyebrow {
 }
 
 html[data-theme="dark"] body .home-network-threat-points-content-card-2 {
-  background-color: rgba(10, 30, 25, 0.9) !important;
-  border-color: rgba(16, 185, 129, 0.55) !important;
-  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.25) !important;
+  background-color: rgba(10, 25, 20, 0.88) !important;
+  border-color: rgba(52, 211, 153, 0.35) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
 }
 html[data-theme="dark"] body .home-network-threat-points-eyebrow-2 {
-  color: #34d399 !important;
+  color: #6ee7b7 !important;
+}
+html[data-theme="dark"] body .home-network-threat-points-status-badge-2 {
+  background-color: #34d399 !important;
+  box-shadow: 0 0 6px rgba(52, 211, 153, 0.4) !important;
 }
 
 html[data-theme="dark"] body .home-network-threat-points-content-card-3 {
@@ -10769,10 +10778,14 @@ html[data-theme="dark"] body .home-terminal-diagnostic-activity-ticker-content-r
   border-bottom-color: rgba(138, 235, 255, 0.12) !important;
 }
 html[data-theme="dark"] body .home-terminal-diagnostic-activity-ticker-inline-text {
-  color: #34d399 !important;
+  color: #6ee7b7 !important;
 }
 html[data-theme="dark"] body .home-terminal-diagnostic-activity-ticker-eyebrow {
   color: #94a3b8 !important;
+}
+html[data-theme="dark"] body .home-terminal-diagnostic-activity-ticker-eyebrow::before {
+  background-color: #34d399 !important;
+  box-shadow: 0 0 6px rgba(52, 211, 153, 0.4) !important;
 }
 html[data-theme="dark"] body .home-terminal-diagnostic-activity-ticker-body-copy {
   color: #e2e8f0 !important;
@@ -10890,9 +10903,9 @@ html[data-theme="dark"] body .home-module-visual-header-content-container {
 }
 
 html[data-theme="dark"] body .home-module-visual-header-status-badge {
-  background-color: rgba(5, 150, 105, 0.25) !important;
-  color: #34d399 !important;
-  border: 1px solid rgba(52, 211, 153, 0.3) !important;
+  background-color: rgba(16, 185, 129, 0.14) !important;
+  color: #6ee7b7 !important;
+  border: 1px solid rgba(52, 211, 153, 0.28) !important;
 }
 
 html[data-theme="dark"] body .home-module-visual-header-status-badge-2 {
@@ -10908,6 +10921,103 @@ html[data-theme="dark"] body .home-module-visual-header-status-badge-2 .home-mod
 /* Module progress bars background */
 html[data-theme="dark"] body .home-progress-bar-content-card {
   background-color: var(--theme-surface-high) !important;
+}
+
+/* --- Page Modules : Banner & Module 1 (Cyber Blue / Cyan - Zero Green) --- */
+html[data-theme="dark"] body .modules-glowing-progress-bar-content-card-2 {
+  background-image: linear-gradient(to right, #0284c7, #38bdf8) !important;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4) !important;
+}
+
+html[data-theme="dark"] body .modules-glassmorphism-progress-kpi-capsule-icon {
+  color: #38bdf8 !important;
+}
+
+html[data-theme="dark"] body .modules-glassmorphism-progress-kpi-capsule-eyebrow-2 {
+  color: #38bdf8 !important;
+}
+
+html[data-theme="dark"] body .modules-card-header-and-badge-content-card {
+  background-color: rgba(56, 189, 248, 0.12) !important;
+  border-color: rgba(56, 189, 248, 0.3) !important;
+  color: #38bdf8 !important;
+}
+
+html[data-theme="dark"] body .modules-card-header-and-badge-status-badge {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+html[data-theme="dark"] body .modules-card-header-and-badge-status-badge-2 {
+  background-color: rgba(56, 189, 248, 0.12) !important;
+  border-color: rgba(56, 189, 248, 0.3) !important;
+  color: #7dd3fc !important;
+}
+
+html[data-theme="dark"] body .modules-card-header-and-badge-eyebrow {
+  color: #38bdf8 !important;
+}
+
+html[data-theme="dark"] body .modules-card-header-and-badge-status-badge-3 {
+  background-color: #38bdf8 !important;
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.5) !important;
+}
+
+/* Badge trophée et note certifiée */
+html[data-theme="dark"] body .modules-completion-vector-mini-chart-content-card-2 {
+  background-color: rgba(56, 189, 248, 0.12) !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+  color: #38bdf8 !important;
+}
+
+html[data-theme="dark"] body .modules-completion-vector-mini-chart-eyebrow-2 {
+  color: #7dd3fc !important;
+}
+
+/* Cercle SVG radial */
+html[data-theme="dark"] body .modules-radial-mini-chart-svg-illustration {
+  color: #38bdf8 !important;
+  opacity: 0.9;
+}
+
+html[data-theme="dark"] body .modules-radial-mini-chart-svg-path-2 {
+  color: #38bdf8 !important;
+}
+
+/* Barre de progression du module : dégradé bleu cyber / cyan */
+html[data-theme="dark"] body .modules-footer-cta-content-container {
+  background: linear-gradient(90deg, #0284c7, #38bdf8) !important;
+}
+
+/* Boutons d'action du module */
+html[data-theme="dark"] body .modules-footer-cta-navigation-link {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%) !important;
+  border-color: rgba(56, 189, 248, 0.4) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(2, 132, 199, 0.3) !important;
+}
+html[data-theme="dark"] body .modules-footer-cta-navigation-link:hover {
+  background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4) !important;
+}
+
+html[data-theme="dark"] body .modules-footer-cta-navigation-link-2 {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%) !important;
+  border-color: rgba(56, 189, 248, 0.4) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(2, 132, 199, 0.3) !important;
+}
+html[data-theme="dark"] body .modules-footer-cta-navigation-link-2:hover {
+  background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%) !important;
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4) !important;
+}
+
+/* Module 3 traffic status dot */
+html[data-theme="dark"] body .modules-mini-traffic-visualizer-representati-status-badge {
+  background-color: #38bdf8 !important;
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.5) !important;
 }
 
 /* --- Quick CTA banner -------------------------------------- */
@@ -11395,7 +11505,7 @@ html[data-theme="dark"] body #answers-container .quiz-answer-option[disabled] {
 
 html[data-theme="dark"] body #answers-container .quiz-answer-option[style*="background:#f0fdf4"],
 html[data-theme="dark"] body #answers-container .quiz-answer-option[style*="background: #f0fdf4"] {
-  background: rgba(112, 221, 176, 0.12) !important;
+  background: rgba(16, 185, 129, 0.12) !important;
   border-color: var(--theme-secondary) !important;
 }
 
@@ -11433,7 +11543,7 @@ html[data-theme="dark"] {
   --cs-primary-glow: rgba(56, 189, 248, 0.4);
   --cs-cyan: #22d3ee;
   --cs-success: #34d399;
-  --cs-success-light: rgba(52, 211, 153, 0.15);
+  --cs-success-light: rgba(16, 185, 129, 0.12);
   --cs-danger: #f87171;
   --cs-danger-light: rgba(248, 113, 113, 0.15);
   --cs-warning: #fbbf24;
@@ -11842,7 +11952,7 @@ html[data-theme="dark"] body .home-ctas-navigation-link:hover {
 
 /* Headline gradient in dark mode */
 html[data-theme="dark"] .home-headline-inline-text {
-  background-image: linear-gradient(135deg, #38bdf8 0%, #22d3ee 50%, #34d399 100%) !important;
+  background-image: linear-gradient(135deg, #38bdf8 0%, #22d3ee 50%, #6ee7b7 100%) !important;
 }
 
 /* Trust cards polish */
@@ -11885,9 +11995,10 @@ button:focus-visible {
 }
 
 html[data-theme="dark"] body .home-completed-indicator-pill-content-card {
-  background-color: rgba(16, 185, 129, 0.22) !important;
-  color: #34d399 !important;
-  border: 1px solid rgba(52, 211, 153, 0.35) !important;
+  background-color: rgba(16, 185, 129, 0.12) !important;
+  color: #6ee7b7 !important;
+  border: 1px solid rgba(52, 211, 153, 0.25) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   backdrop-filter: blur(6px);
 }
 
@@ -11942,4 +12053,106 @@ html[data-theme="dark"] body .home-progress-bar-navigation-link-2:hover {
   color: #ffffff !important;
 }
 
+/* Consistent primary blue used across every page */
+:is(
+  .home-ctas-navigation-link,
+  .home-ctas-navigation-link-2,
+  .modules-footer-cta-navigation-link,
+  .modules-footer-cta-navigation-link-2,
+  .quiz-action-control-group-primary-action,
+  .results-main-advance-cta-button-navigation-link,
+  .results-download-action-button-button,
+  .results-retake-quiz-button-button,
+  .simulation-playback-navigation-buttons-primary-action,
+  .simulation-validation-button-content-link
+) {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28) !important;
+}
+
+:is(
+  .home-ctas-navigation-link:hover,
+  .home-ctas-navigation-link-2:hover,
+  .modules-footer-cta-navigation-link:hover,
+  .modules-footer-cta-navigation-link-2:hover,
+  .quiz-action-control-group-primary-action:hover,
+  .results-main-advance-cta-button-navigation-link:hover,
+  .results-download-action-button-button:hover,
+  .results-retake-quiz-button-button:hover,
+  .simulation-playback-navigation-buttons-primary-action:hover,
+  .simulation-validation-button-content-link:hover
+) {
+  background: #0369a1 !important;
+  border-color: #0369a1 !important;
+  color: #ffffff !important;
+}
+
+/* Keep validation-button text readable on its blue dark-mode CTA. */
+html[data-theme="dark"] body .simulation-validation-button-content-link,
+html[data-theme="dark"] body .simulation-validation-button-content-link span {
+  color: #ffffff !important;
+}
+
+/* Restore the original light-mode secondary CTA styling. */
+html:not([data-theme="dark"]) body .home-ctas-navigation-link-2 {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #334155 !important;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05), 0 1px 3px 0 rgb(0 0 0 / 0.1) !important;
+}
+
+html:not([data-theme="dark"]) body .home-ctas-navigation-link-2:hover {
+  background: rgb(240 249 255 / 0.5) !important;
+  border-color: #7dd3fc !important;
+  color: #0284c7 !important;
+}
+
+/* Home module cards use the same primary blue as the other CTAs. */
+.home-progress-bar-navigation-link,
+.home-progress-bar-navigation-link-2 {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28) !important;
+}
+
+.home-progress-bar-navigation-link:hover,
+.home-progress-bar-navigation-link-2:hover {
+  background: #0369a1 !important;
+  border-color: #0369a1 !important;
+  color: #ffffff !important;
+}
+
+/* Match the home module-card CTA and make the active navigation tab consistent. */
+html[data-theme="dark"] body .home-progress-bar-navigation-link,
+html[data-theme="dark"] body .home-progress-bar-navigation-link-2 {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] body .home-progress-bar-navigation-link:hover,
+html[data-theme="dark"] body .home-progress-bar-navigation-link-2:hover {
+  background: #0369a1 !important;
+  border-color: #0369a1 !important;
+  color: #ffffff !important;
+}
+
+body > header.home-header-site-header nav.home-header-primary-navigation a[aria-current="page"],
+body > header.home-header-site-header nav.home-header-primary-navigation a.home-header-content-link {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 3px 10px rgba(2, 132, 199, 0.25) !important;
+}
+
+html[data-theme="dark"] body > header.home-header-site-header nav.home-header-primary-navigation a[aria-current="page"],
+html[data-theme="dark"] body > header.home-header-site-header nav.home-header-primary-navigation a.home-header-content-link {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35) !important;
+}
 
