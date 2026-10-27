@@ -10660,37 +10660,124 @@ html[data-theme="dark"] body .home-right-column-interactive-attack-rada-content-
   background-image: linear-gradient(to top right, rgba(8,50,100,0.6), rgba(8,19,39,0.8), rgba(14,55,45,0.5)) !important;
 }
 
-/* --- Home hero right panel --------------------------------- */
+/* --- Home hero right panel (Console d'Analyse CyberShield) --- */
 html[data-theme="dark"] body .home-right-column-interactive-attack-rada-content-card-2 {
   background-color: var(--theme-surface) !important;
   border-color: var(--theme-border) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
 }
 
 html[data-theme="dark"] body .home-simulated-radar-header-content-row {
   border-color: var(--theme-border) !important;
 }
 
-/* Radar rings */
-html[data-theme="dark"] body :is(
-  .home-radial-grid-rings-content-card,
-  .home-radial-grid-rings-content-card-2,
-  .home-radial-grid-rings-content-card-3
-) {
-  border-color: rgba(138, 235, 255, 0.12) !important;
+html[data-theme="dark"] body .home-simulated-radar-header-eyebrow {
+  color: #f8fafc !important;
 }
 
+html[data-theme="dark"] body .home-simulated-radar-header-status-badge {
+  background-color: rgba(16, 185, 129, 0.15) !important;
+  border-color: rgba(16, 185, 129, 0.4) !important;
+  color: #34d399 !important;
+}
+
+/* Radar screen */
+html[data-theme="dark"] body .home-radar-graphic-representation-content-card {
+  background-color: #061325 !important;
+  border-color: rgba(138, 235, 255, 0.2) !important;
+  box-shadow: inset 0 0 40px rgba(2, 132, 199, 0.18) !important;
+}
+
+/* Radar rings */
+html[data-theme="dark"] body .home-radial-grid-rings-content-card {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  border-color: rgba(138, 235, 255, 0.15) !important;
+}
+
+html[data-theme="dark"] body .home-radial-grid-rings-content-card-2 {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(138, 235, 255, 0.2) !important;
+}
+
+html[data-theme="dark"] body .home-radial-grid-rings-content-card-3 {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(138, 235, 255, 0.25) !important;
+}
+
+/* Crosshairs */
 html[data-theme="dark"] body :is(
   .home-crosshair-lines-content-container,
   .home-crosshair-lines-content-container-2
 ) {
-  background-color: rgba(138, 235, 255, 0.08) !important;
+  background-color: rgba(138, 235, 255, 0.12) !important;
+}
+
+/* Disable rotating scan sweep ray in dark mode */
+html[data-theme="dark"] .home-rotating-scan-sweep-ray-content-container {
+  animation: none !important;
+  display: none !important;
+}
+
+/* Threat and security points */
+html[data-theme="dark"] body .home-network-threat-points-content-card {
+  background-color: rgba(30, 15, 25, 0.9) !important;
+  border-color: rgba(244, 63, 94, 0.55) !important;
+  box-shadow: 0 2px 10px rgba(244, 63, 94, 0.25) !important;
+}
+html[data-theme="dark"] body .home-network-threat-points-eyebrow {
+  color: #fb7185 !important;
+}
+
+html[data-theme="dark"] body .home-network-threat-points-content-card-2 {
+  background-color: rgba(10, 30, 25, 0.9) !important;
+  border-color: rgba(16, 185, 129, 0.55) !important;
+  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.25) !important;
+}
+html[data-theme="dark"] body .home-network-threat-points-eyebrow-2 {
+  color: #34d399 !important;
+}
+
+html[data-theme="dark"] body .home-network-threat-points-content-card-3 {
+  background-color: rgba(10, 25, 45, 0.9) !important;
+  border-color: rgba(14, 165, 233, 0.55) !important;
+  box-shadow: 0 2px 10px rgba(14, 165, 233, 0.25) !important;
+}
+html[data-theme="dark"] body .home-network-threat-points-eyebrow-3 {
+  color: #38bdf8 !important;
+}
+
+/* Center shield */
+html[data-theme="dark"] body .home-central-cyber-defense-shield-content-card {
+  background-color: #0b1f3a !important;
+  border-color: rgba(56, 189, 248, 0.45) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 16px rgba(2, 132, 199, 0.3) !important;
+}
+html[data-theme="dark"] body .home-central-cyber-defense-shield-icon {
+  color: #38bdf8 !important;
+}
+html[data-theme="dark"] body .home-central-cyber-defense-shield-eyebrow {
+  color: #38bdf8 !important;
 }
 
 /* Terminal ticker */
 html[data-theme="dark"] body .home-terminal-diagnostic-activity-ticker-content-card {
-  background-color: rgba(0, 10, 20, 0.85) !important;
+  background-color: rgba(4, 13, 26, 0.92) !important;
   border-color: rgba(138, 235, 255, 0.2) !important;
+}
+html[data-theme="dark"] body .home-terminal-diagnostic-activity-ticker-content-row {
+  border-bottom-color: rgba(138, 235, 255, 0.12) !important;
+}
+html[data-theme="dark"] body .home-terminal-diagnostic-activity-ticker-inline-text {
+  color: #34d399 !important;
+}
+html[data-theme="dark"] body .home-terminal-diagnostic-activity-ticker-eyebrow {
+  color: #94a3b8 !important;
+}
+html[data-theme="dark"] body .home-terminal-diagnostic-activity-ticker-body-copy {
+  color: #e2e8f0 !important;
+}
+html[data-theme="dark"] body .home-terminal-diagnostic-activity-ticker-body-copy-2 {
+  color: #38bdf8 !important;
 }
 
 /* --- Header ------------------------------------------------ */
