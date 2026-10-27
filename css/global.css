@@ -10833,12 +10833,81 @@ html[data-theme="dark"] body [class*="trust-and-credibility-bar-content-card"] {
 /* --- Progress bars ----------------------------------------- */
 html[data-theme="dark"] body [class*="progress-capsule-content-card-4"],
 html[data-theme="dark"] body [class*="progress-bar-content-card"]:not([class*="progress-bar-content-card-2"]):not([class*="progress-bar-content-card-3"]):not([class*="progress-bar-content-card-4"]) {
-  background-color: var(--theme-surface-high) !important;
+  background-color: #334155 !important;
 }
 
-html[data-theme="dark"] body [class*="progress-capsule-content-card"] {
+html[data-theme="dark"] body .home-progress-capsule-content-card {
   background-color: rgba(31, 42, 63, 0.8) !important;
   border-color: var(--theme-border) !important;
+}
+
+html[data-theme="dark"] body .home-progress-capsule-content-row {
+  display: flex !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  flex: 0 0 1rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: visible !important;
+}
+
+html[data-theme="dark"] body .home-progress-capsule-content-card-2 {
+  display: block !important;
+  position: relative !important;
+  z-index: 2 !important;
+  width: 0.625rem !important;
+  height: 0.625rem !important;
+  min-width: 0.625rem !important;
+  min-height: 0.625rem !important;
+  flex: 0 0 0.625rem !important;
+  border-radius: 9999px !important;
+  background: #34d399 !important;
+  background-color: #34d399 !important;
+  border: 2px solid #6ee7b7 !important;
+  box-shadow: 0 0 10px 3px rgba(52, 211, 153, 0.75) !important;
+  animation: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+html[data-theme="dark"] body .home-progress-capsule-content-card-3 {
+  display: block !important;
+  position: absolute !important;
+  z-index: 1 !important;
+  inset: 50% auto auto 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  min-width: 1rem !important;
+  min-height: 1rem !important;
+  border-radius: 9999px !important;
+  background-color: rgba(52, 211, 153, 0.2) !important;
+  box-shadow: 0 0 12px rgba(52, 211, 153, 0.25) !important;
+  animation: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+html[data-theme="dark"] body .home-progress-capsule-content-card-4 {
+  display: block !important;
+  height: 0.375rem !important;
+  opacity: 1 !important;
+}
+
+html[data-theme="dark"] body .home-progress-capsule-content-card-5 {
+  display: block !important;
+  min-width: 33.333333% !important;
+  height: 100% !important;
+  background-image: linear-gradient(to right, #38bdf8, #34d399) !important;
+  opacity: 1 !important;
+}
+
+html[data-theme="dark"] body .home-progress-capsule-eyebrow {
+  color: var(--theme-text) !important;
+}
+
+html[data-theme="dark"] body .home-progress-capsule-eyebrow-2 {
+  color: #6ee7b7 !important;
 }
 
 /* --- Hero "live pill" & bilingual tag ---------------------- */
