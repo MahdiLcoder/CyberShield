@@ -10287,3 +10287,92 @@ html[dir="rtl"] .material-symbols-outlined.no-rtl-flip {
     width: 90% !important;
   }
 }
+
+/* Theme toggle */
+.theme-toggle {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 2.5rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  background: #fff;
+  color: #334155;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.theme-toggle:hover {
+  background: #f1f5f9;
+}
+
+.theme-toggle .material-symbols-outlined {
+  font-size: 1.125rem;
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid #38bdf8;
+  outline-offset: 2px;
+}
+
+html[data-theme="dark"] body {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+  color-scheme: dark;
+}
+
+html[data-theme="dark"] body :is(h1, h2, h3, h4, h5, h6, p, li, label, dt, dd, figcaption, blockquote, [class*="page-title"], [class*="section-title"], [class*="body-copy"], [class*="eyebrow"], [class*="inline-text"], [class*="card-title"]) {
+  color: #e2e8f0 !important;
+}
+
+html[data-theme="dark"] body :is(a:not([aria-current="page"]), [class*="navigation-link"], [class*="navigation-content-link"]) {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] body :is(header, footer, [class*="content-card"], [class*="panel"], [class*="answer-option"], [class*="step-card"], [class*="certificate-preview"], [class*="content-container"]):not([class*="ambient"]):not([class*="glow"]):not([class*="progress-fill"]) {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+
+html[data-theme="dark"] body :is(input, select, textarea) {
+  background-color: #1e293b !important;
+  border-color: #475569 !important;
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] body a:not([class*="content-link"]):hover,
+html[data-theme="dark"] body [class*="navigation-link"]:hover {
+  color: #7dd3fc !important;
+}
+
+html[data-theme="dark"] .theme-toggle {
+  background: #1e293b;
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .theme-toggle:hover {
+  background: #334155;
+}
+
+@media (max-width: 640px) {
+  .theme-toggle {
+    width: 2.5rem;
+    padding: 0.45rem;
+  }
+
+  .theme-toggle [data-theme-label] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+}
