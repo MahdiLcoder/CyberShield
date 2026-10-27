@@ -138,11 +138,12 @@ main > :last-child {
 
 .home-header-content-row {
   height: 5rem;
-  max-width: 1600px;
+  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: clamp(1rem, 2.5vw, 2.5rem);
+  padding-right: clamp(1rem, 2.5vw, 2.5rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11154,8 +11155,9 @@ body > header:is([class*="header-site-header"], [class*="top-navigation-site-hea
 body > header:is([class*="header-site-header"], [class*="top-navigation-site-header"]) > div[class*="content-row"] {
   min-height: 5rem;
   height: auto;
-  max-width: 1480px;
-  padding-inline: clamp(1rem, 3vw, 2.5rem);
+  width: 100%;
+  max-width: 100%;
+  padding-inline: clamp(1rem, 2.5vw, 2.5rem);
 }
 
 body > header:is([class*="header-site-header"], [class*="top-navigation-site-header"]) [class*="brand-link"] {
